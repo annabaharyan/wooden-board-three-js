@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Three.js task for M&D</title>
+    <style>
+      body {
+        margin: 0 auto;
+      }
+      .canvas {
+        width: 100wh;
+        height: 90vh;
+      }
+
+      .setting-wrapper,
+      .setting-wrapper > div {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="canvas"></div>
+    <div class="setting-wrapper">
+      <div>
+        <input type="text" placeholder="width" id="width" />
+        <input type="text" placeholder="depth" id="depth" />
+        <p class="err-msg" style="color: red"></p>
+        <button type="button" class="btn-set">Set</button>
+      </div>
+
+      <div>
+        <button class="left">Left perspective camera</button>
+        <button class="front">Front perspective camera</button>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
