@@ -94,10 +94,6 @@ btnCameraFront.addEventListener("click", () => {
 
 function animate() {
   requestAnimationFrame(animate);
-
-  cuboid.rotation.x += 0.01;
-  cuboid.rotation.y += 0.01;
-
   renderer.render(scene, camera);
 }
 
